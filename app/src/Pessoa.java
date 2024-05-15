@@ -1,8 +1,32 @@
 public class Pessoa {
 
-    protected String nome;
-    protected String CPF;
+    public Pessoa(int idP, String nome, int idade) {
+        this.idP = idP;
+        this.nome = nome;
+        this.idade = idade;
+    }
 
+    protected int idP;
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "idP=" + idP +
+                ", nome='" + nome + '\'' +
+                ", idade=" + idade +
+                '}';
+    }
+
+    protected String nome;
+    protected int idade;
+
+    public int getIdP() {
+        return idP;
+    }
+
+    public void setIdP(int idP) {
+        this.idP = idP;
+    }
 
     public String getNome() {
         return nome;
@@ -12,11 +36,11 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public String getCPF() {
-        return CPF;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setCPF(String next) {
-        this.CPF = CPF;
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 }
