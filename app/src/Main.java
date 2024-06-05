@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        Pessoa p = new Pessoa();
+        CadastroPessoas cadastro = new CadastroPessoas();
 
     }
 }
